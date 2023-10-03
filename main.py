@@ -10,9 +10,9 @@ bot = Client(intents=Intents.DEFAULT,
 async def on_ready():
     print("Baiheng's ready!")
 
-@listen(MessageCreate)
-async def on_message_create(event: MessageCreate):
-    print(f"Message received: {event.message.content}")
+# @listen(MessageCreate)
+# async def on_message_create(event: MessageCreate):
+#     print(f"Message received: {event.message.content}")
 
 bot.start(f"{token_1.token_}")
 
